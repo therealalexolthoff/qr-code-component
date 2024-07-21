@@ -1,0 +1,82 @@
+/* Some normalization (on top of modern normalize. Credit to Matt Brictson (https://mattbrictson.com/blog/css-normalize-and-reset#my-recommendation */
+
+/* Set the default line height to be in line with accessibility standards https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html */
+:root {
+    line-height: 1.5;
+  }
+
+/* Get rid of all margins on (almost) all text */
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+    margin: 0;
+}
+
+/* For compatibility with Safari Voice Over */
+ol[role="list"], ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+  }
+
+/* Set headings to no styles so I can style them myself */
+h1, h2, h3, h4, h5 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+/* Sets the default behavior for images to fit within container */
+img {
+    display: block;
+    max-inline-size: 100%;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    background-color: hsl(212, 45%, 89%);
+    margin: auto;
+}
+#spacer {
+    height: 152px;
+}
+#module-container {
+    width: 320px;
+    height: 497px;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    flex-direction: column;
+    border-radius: 5%;
+}
+#qr-container{
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: #2C7DFA;
+    height: 288px;
+    width: 288px;
+}
+#qr-code{
+    max-inline-size: 90%;
+}
+#text-container {
+    height: 129px;
+    width: 288px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#title {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#body-copy {
+   font-size: 15px;
+   text-align: center;
+   font-weight: lighter;
+}
+/* Project styles provided at outset */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
