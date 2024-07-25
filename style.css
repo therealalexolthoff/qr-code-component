@@ -1,8 +1,14 @@
+
 /* Some normalization (on top of modern normalize. Credit to Matt Brictson (https://mattbrictson.com/blog/css-normalize-and-reset#my-recommendation */
 
 /* Set the default line height to be in line with accessibility standards https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html */
 :root {
     line-height: 1.5;
+    --white-color: hsl(0, 0%, 100%);
+    --lightish-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: #2C7DFA;
+    font-family: '';
   }
 
 /* Get rid of all margins on (almost) all text */
@@ -33,7 +39,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content:space-between;
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--lightish-gray);
     margin: auto;
 }
 .header-spacer {
@@ -42,7 +48,7 @@ body {
 .module-container {
     width: 320px;
     height: 497px;
-    background-color: white;
+    background-color: var(--white-color);
     display: flex;
     align-items: flex-start;
     padding: 1rem;
@@ -53,7 +59,7 @@ body {
     border-radius: 5%;
     display: flex;
     justify-content: center;
-    background-color: #2C7DFA;
+    background-color: var(--dark-blue);
     height: 288px;
     width: 288px;
 }
@@ -76,6 +82,10 @@ body {
    font-size: 15px;
    text-align: center;
    font-weight: lighter;
+}
+footer {
+    position: fixed;
+    bottom: 0;
 }
 /* Project styles provided at outset */
 .attribution { font-size: 11px; text-align: center; }
